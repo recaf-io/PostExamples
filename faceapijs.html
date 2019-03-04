@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <button id="btnStartVideo">Start Video</button>
+        <button id="btnProcess">Process Image</button>
+        <div style="position: relative; width: 300px; height:400px;">
+            <canvas id="canvasFrame" style="position: absolute; top:0; left:0; z-index:1" width="400" height="300" ></canvas>
+            <video style="position: absolute; top:0; left:0; z-index:10" width="400" height="300"  playsinline autoplay></video>
+            <canvas id="canvasOverlay" style="position: absolute; top:0; left:0; z-index:100" width="400" height="300" ></canvas>
+            <canvas id="canvasFaceCrop" style="z-index:100; margin-left: 400px;" width="400" height="300" ></canvas>
+        </div>
+        <div style="display:none" id="fps" >0</div>
+
+        <script src="face-api.min.js"></script>
+        <script src="camera.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
