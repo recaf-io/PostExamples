@@ -82,7 +82,7 @@ var App = /** @class */ (function () {
         this.canvasFaceCrop = document.querySelector("#canvasFaceCrop");
         this.divFPS = document.querySelector("#fps");
         // setup faceAPI helper library
-        faceapi.nets.ssdMobilenetv1.load('/face/');
+        faceapi.nets.ssdMobilenetv1.load('/PostExamples/face/');
     }
     App.prototype.btnStartClicked = function (e) {
         this.camera.startVideo(this.video);
